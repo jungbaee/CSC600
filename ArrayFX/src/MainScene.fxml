@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane layoutY="6.0" prefHeight="455.0" prefWidth="582.0">
+         <children>
+            <Label fx:id="array" layoutX="30.0" layoutY="20.0" text="Content of the array" />
+            <Label fx:id="originalArrayLabel" layoutX="20.0" layoutY="49.0" text="Blank" />
+            <Label layoutX="29.0" layoutY="83.0" text="Content of the sorted array" />
+            <Label fx:id="sortedArrayLabel" layoutX="20.0" layoutY="112.0" text="Blank" />
+            <Label fx:id="sizeLabel" layoutX="159.0" layoutY="232.0" prefHeight="17.0" prefWidth="161.0" text=" " />
+            <TextField fx:id="indexAddTextField" layoutX="108.0" layoutY="286.0" prefHeight="25.0" prefWidth="167.0" promptText="index to add" />
+            <Button fx:id="displayContentButton" layoutX="36.0" layoutY="152.0" mnemonicParsing="false" onAction="#displayTheContent" text="Display the content" />
+            <Button fx:id="addButton" layoutX="37.0" layoutY="286.0" mnemonicParsing="false" onAction="#add" text="Add" />
+            <Button fx:id="deleteBtton" layoutX="37.0" layoutY="325.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+            <Button fx:id="sortButton" layoutX="37.0" layoutY="187.0" mnemonicParsing="false" onAction="#sort" text="Sort" />
+            <Button fx:id="displayTheSizeButton" layoutX="33.0" layoutY="228.0" mnemonicParsing="false" onAction="#displayTheSize" text="Display the size" />
+            <Button fx:id="searchButton" layoutX="36.0" layoutY="361.0" mnemonicParsing="false" onAction="#search" text="Search" />
+            <TextField fx:id="numberValueTextField" layoutX="291.0" layoutY="286.0" prefHeight="25.0" prefWidth="179.0" promptText="number to add" />
+            <TextField fx:id="indexDeleteTextField" layoutX="108.0" layoutY="325.0" promptText="index to delete" />
+            <TextField fx:id="numberSearchTextField" layoutX="111.0" layoutY="361.0" promptText="number to search" />
+            <Label fx:id="searchLabel" layoutX="305.0" layoutY="365.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
