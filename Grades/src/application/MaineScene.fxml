@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="223.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane prefHeight="297.0" prefWidth="325.0">
+         <children>
+            <Button fx:id="readGradesBtn" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleReadGrades" text="Read Grades File" />
+            <Button fx:id="calculateBtn" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleCalcGPA" prefHeight="25.0" prefWidth="110.0" text="Calculate GPA" />
+            <TextField fx:id="fileNameTF" layoutX="146.0" layoutY="21.0" promptText="FileName" />
+            <Label fx:id="GPALabel" alignment="CENTER" layoutX="14.0" layoutY="103.0" prefHeight="17.0" prefWidth="118.0" text="GPA is: ..." />
+            <Button fx:id="OkBtn" layoutX="273.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleOKPressed" text="Ok" />
+            <ComboBox fx:id="comboBox" layoutX="146.0" layoutY="62.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label fx:id="readingLabel" layoutX="54.0" layoutY="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
